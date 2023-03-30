@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DCDCDC;
+    min-width: 100vw;
+}
+#retangulo{
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+}
+.linha1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#retangulo.c1{
+    position: absolute;
+}
+#retangulo.c2{
+    position: absolute;
+}
+#retangulo.c3{
+    position: absolute;
+}
+.linha2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-bottom: 5px solid red;
+}
+.linha2 ul li{
+    display: inline-block;
+    margin: 30px;
+}
+.linha2 ul li a{
+    color:white;
+    font-size:16px;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    text-align: center;
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px rgba(50, 50, 50, 0.22);
+    margin: 2%;
+    width: 400px;
+}
+.card:hover{
+    transform:translateY(-5px);
+    cursor: pointer;
+}
+.laranja{
+    border-left: 6px solid orange;
+}
+.azul{
+    border-left: 6px solid blue;
+}
+.rosa{
+    border-left: 6px solid pink;
+}
+.vermelho{
+    border-left: 6px solid red;
+}
+.titulo{
+    padding-left: 4%;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    
+}
+.colinha{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.colinha2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.colinha a{
+    color:black;
+    font-size:16px;
+    text-decoration: none;
+}
+#cor_rodape{
+    background-color: black;
+    height: 200px;
+    border-top: 6px solid red;
+}
+#titlejudo{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+#titlekarate{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+#titletaekwondo{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+#titlekungfu{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+@media screen and (max-width: 671px) {
+    .row{
+        flex-direction: column;
+    }
+    .colinha{
+        flex-direction: column;
+    }
+    .linha1{
+        display: none;
+    }
+    }
+@media screen and (max-width: 918px) {
+    .colinha2{
+        flex-direction: column;
+    }
+}
